@@ -9,5 +9,7 @@ FSL 5.0.10 should be installed on your path. <br/>
   <li>Step 6: co-registers the SA2RAGE images with the averaged 2D MRF images through a two-level linear registration (using FSL FLIRT with 6 DOF).</li>
   <li>Step 7: Co-registers the GM mask of the individual subject to the MRF image of the same subject. <br/>
   The individual’s grey matter tissue was extracted from the MP2RAGE T1-weighted image, using the SPM12 segmentation software (http://www.fil.ion.ucl.ac.uk/spm). </li>
+  <li>Step 8: Performs a two-level non-linear registration, using FSL FNIRT, to find the transformation from the MNI-152 standard space to the MRF native space. </li>
+  <li>Step 9: Applies the non-linear transformation from step 8 to transform the binary masks of the Juelich histological atlas target areas, from the MNI-152 standard space to the MRF native space.  </li>
 </ul>
 
