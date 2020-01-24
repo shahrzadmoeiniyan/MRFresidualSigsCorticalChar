@@ -7,5 +7,7 @@ FSL 5.0.10 should be installed on your path. <br/>
   <li>Step 2: linearly co-registered (using 2D FSL FLIRT with 6 DOF) and then averaged 2D MRF images of the three repetitions for each slice. </li> 
   <li>Step 3-5: the brain-extracted MP2RAGE images were co-registered with the averaged 2D MRF images, using FSL FLIRT with 6 DOF.  </li>
   <li>Step 6: co-registers the SA2RAGE images with the averaged 2D MRF images through a two-level linear registration (using FSL FLIRT with 6 DOF).</li>
+  <li>Step 7: Co-registers the GM mask of the individual subject to the MRF image of the same subject. <br/>
+  The individual’s grey matter tissue was extracted from the MP2RAGE T1-weighted image, using the SPM12 segmentation software (http://www.fil.ion.ucl.ac.uk/spm). </li>
 </ul>
 
